@@ -1,4 +1,5 @@
 // Written by Jack Rivadeneira on 20150917122321
+package ui;
 import javax.swing.*;
 public class MainUI extends JFrame{
 	// Main UI class.

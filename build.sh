@@ -1,10 +1,12 @@
 echo Deleting binaries...
 mkdir -p bin
-rm bin/*
-cd src
+rm -rf bin/*
+cp -r src/* bin
+. .pluginGen.sh
 echo Done!
 echo Compiling...
-javac *.java
-mv *.class ../bin
+cd bin
+javac */*.java
+rm */*.java
 cd ..
 echo Done!
