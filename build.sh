@@ -1,7 +1,7 @@
 echo Deleting binaries...
-cd bin
-rm *
-cd ../src
+mkdir -p bin
+rm bin/*
+cd src
 echo Done!
 echo Compiling...
 javac *.java
